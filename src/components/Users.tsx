@@ -46,9 +46,11 @@ function Users() {
     }
 
     const updateUsersList = (e:any) => {
-        let startNumber = e.target.innerText - 1;
-        setStartNumber(startNumber+1);
-        makeApiCall(false,startNumber*5);
+        if(!isNaN(e.target.innerText)){
+            let startNumber = e.target.innerText - 1;
+            setStartNumber(startNumber+1);
+            makeApiCall(false,startNumber*5);
+        }
     }
 
     const addUser = async () => {
