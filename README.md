@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To Do
+1. Write unit test cases using jest
+2. Make the code modular
+
+In the project directory, you can run:
+
 ## Available Scripts
 
 In the project directory, you can run:
