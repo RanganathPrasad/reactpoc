@@ -36,7 +36,7 @@ function Users() {
         setUsers([]);
         setUsers(result.data.data.users);
         if(updateCount){
-            setTotalCount(Math.round(result.data.data.count/5))
+            setTotalCount(Math.ceil(result.data.data.count/5))
         }
         setLoading(false);
     }
